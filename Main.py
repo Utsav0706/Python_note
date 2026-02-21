@@ -6,7 +6,7 @@ lives = 6
 print(art.logo)
 
 chosenWord = random.choice(words.wordlist)
-print(chosenWord)
+# print(chosenWord)
 
 placeHolder = ""
 wordLength = len(chosenWord)
@@ -36,7 +36,7 @@ while not gameOver:
             display += letter
         else:
             display += "_"
-    print("Word to guess" + display)
+    print("Word to guess " + display)
 
     if guess not in chosenWord:
         lives -= 1
